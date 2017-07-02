@@ -1,0 +1,23 @@
+{
+  "name": "olanyzer",
+  "version": "0.1.0",
+  "description": "",
+  "main": "server/app.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon -w server -e \"js\"./server/app.js",
+    "client": "node startClient.js"
+  },
+  "author": "Wojtek Augustynski",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.0",
+    "morgan": "^1.8.2"
+  }
+}

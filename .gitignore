@@ -1,0 +1,5 @@
+node_modules
+docker-compose.yml
+dist/*
+db/mongo
+olanyzer/node_modules
