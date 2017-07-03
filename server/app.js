@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 
+const db = require('./db/mongo');
+
 app.use(morgan('dev'));
 
 app.use('/api', require('./router'));
